@@ -1,0 +1,200 @@
+prompt --application/shared_components/navigation/lists/p4500_utilities_menu
+begin
+--   Manifest
+--     LIST: P4500 Utilities Menu
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>4000
+,p_default_id_offset=>0
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(3741507057557)
+,p_name=>'P4500 Utilities Menu'
+,p_static_id=>'P4500-Utilities-Menu'
+,p_version_scn=>'SH256:kyvDW5PhO44e01wiV78Jofyt1sgZhBN0lshxt3lg1AY'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(3759689081747)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Delete Page'
+,p_static_id=>'Delete-Page'
+,p_list_item_link_target=>'f?p=&APP_ID.:21:&SESSION.::&DEBUG.:21:::'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1557582117917328385)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'-----'
+,p_static_id=>'-----'
+,p_list_item_link_target=>'separator'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(3741509057557)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Advisor'
+,p_static_id=>'Advisor'
+,p_list_item_link_target=>'javascript:apex.navigation.popup({ url: ''f?p=&APP_ID.:8101:&SESSION.::&DEBUG.:8101:P8101_PAGE_ID:'' + pe.getCurrentPageId(), width: 1000, height: 800 }); void(0);'
+,p_list_text_01=>'pd-advisor'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1557573865167095591)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Caching'
+,p_static_id=>'Caching'
+,p_list_item_link_target=>'f?p=&APP_ID.:14:&SESSION.::&DEBUG.:RP,14:::'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(3759733090282)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'History'
+,p_static_id=>'History'
+,p_list_item_link_target=>'f?p=&APP_ID.:201:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(591681741179830880)
+,p_list_item_display_sequence=>65
+,p_list_item_link_text=>'Checksum'
+,p_static_id=>'Checksum'
+,p_list_item_link_target=>'f?p=&APP_ID.:109:&SESSION.::&DEBUG.:109:P109_COMPONENT:PAGE:'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(3759730086463)
+,p_list_item_display_sequence=>70
+,p_list_item_link_text=>'Export'
+,p_static_id=>'Export'
+,p_list_item_link_target=>'f?p=&APP_ID.:637:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1856686776041507)
+,p_list_item_display_sequence=>71
+,p_list_item_link_text=>'-----'
+,p_static_id=>'separator3'
+,p_list_item_link_target=>'separator'
+,p_required_patch=>wwv_flow_imp.id(170786031904296885)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(2022475323694780)
+,p_list_item_display_sequence=>72
+,p_list_item_link_text=>'Use Sample Data'
+,p_static_id=>'sample-data'
+,p_list_text_01=>'pd-use-sample-data'
+,p_required_patch=>wwv_flow_imp.id(170786031904296885)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1564223914175232731)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'-----'
+,p_static_id=>'------2'
+,p_list_item_link_target=>'separator'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_item_display_sequence=>150
+,p_list_item_link_text=>'Show'
+,p_static_id=>'Show'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(84646475110887465)
+,p_list_item_display_sequence=>170
+,p_list_item_link_text=>'Tooltips'
+,p_static_id=>'Tooltips'
+,p_parent_list_item_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_text_01=>'pd-enable-tooltips'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(2201139566791850)
+,p_list_item_display_sequence=>172
+,p_list_item_link_text=>'Text Messages Picker'
+,p_static_id=>'Text-Messages-Picker'
+,p_parent_list_item_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_text_01=>'pd-enable-text-messages-picker'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(4001188509570177)
+,p_list_item_display_sequence=>173
+,p_list_item_link_text=>'Global Page Components'
+,p_static_id=>'show-global-page-components'
+,p_parent_list_item_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_text_01=>'pd-show-global-page-components'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(168639226669446654)
+,p_list_item_display_sequence=>175
+,p_list_item_link_text=>'----'
+,p_static_id=>'----'
+,p_list_item_link_target=>'separator'
+,p_parent_list_item_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(168416197532917059)
+,p_list_item_display_sequence=>190
+,p_list_item_link_text=>'Layout View'
+,p_static_id=>'Layout-View'
+,p_parent_list_item_id=>wwv_flow_imp.id(168415028897876470)
+,p_list_text_01=>'pd-show-layout-view'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(715120241154282785)
+,p_list_item_display_sequence=>160
+,p_list_item_link_text=>'Layout'
+,p_static_id=>'Layout'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(715121304457300310)
+,p_list_item_display_sequence=>200
+,p_list_item_link_text=>'Two Pane Mode'
+,p_static_id=>'Two-Pane-Mode'
+,p_parent_list_item_id=>wwv_flow_imp.id(715120241154282785)
+,p_list_text_01=>'pd-two-column'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(715121981042303143)
+,p_list_item_display_sequence=>210
+,p_list_item_link_text=>'Three Pane Mode'
+,p_static_id=>'Three-Pane-Mode'
+,p_parent_list_item_id=>wwv_flow_imp.id(715120241154282785)
+,p_list_text_01=>'pd-three-column'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(715122647048306435)
+,p_list_item_display_sequence=>220
+,p_list_item_link_text=>'-----'
+,p_static_id=>'------3'
+,p_list_item_link_target=>'separator'
+,p_parent_list_item_id=>wwv_flow_imp.id(715120241154282785)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(715123600559310924)
+,p_list_item_display_sequence=>230
+,p_list_item_link_text=>'Reset Layout'
+,p_static_id=>'Reset-Layout'
+,p_parent_list_item_id=>wwv_flow_imp.id(715120241154282785)
+,p_list_text_01=>'pd-reset-tab-layout'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp.component_end;
+end;
+/
