@@ -46,7 +46,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'test app'
 ,p_file_prefix=>nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>2460921101025
-,p_version_scn=>'1216393099'
+,p_version_scn=>'1216659241'
 ,p_print_server_type=>'NATIVE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'

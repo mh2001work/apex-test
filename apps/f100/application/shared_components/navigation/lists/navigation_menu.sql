@@ -15,7 +15,7 @@ wwv_flow_imp_shared.create_list(
  p_id=>wwv_flow_imp.id(1507316129389629)
 ,p_name=>'Navigation Menu'
 ,p_static_id=>'navigation-menu'
-,p_version_scn=>'SH256:cHt1JBAsdhBQ33AnvpfXBU18H-3M3vYQlMNJXIW4-yc'
+,p_version_scn=>'SH256:S8GMmkk2m_IIzNPlv-hyjpe3S6jieT5QHzhxYf93BX8'
 );
 wwv_flow_imp_shared.create_list_item(
  p_id=>wwv_flow_imp.id(1518787795389768)
@@ -25,6 +25,16 @@ wwv_flow_imp_shared.create_list_item(
 ,p_list_item_link_target=>'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
 ,p_list_item_icon=>'fa-home'
 ,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1559499996111581)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'Trend Insights'
+,p_static_id=>'trend-insights'
+,p_list_item_link_target=>'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-area-chart'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'2'
 );
 wwv_flow_imp.component_end;
 end;
