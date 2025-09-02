@@ -1,0 +1,73 @@
+prompt --application/shared_components/user_interface/lovs/file_extensions
+begin
+--   Manifest
+--     FILE EXTENSIONS
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>4000
+,p_default_id_offset=>0
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(152392614641425297)
+,p_lov_name=>'FILE EXTENSIONS'
+,p_static_id=>'file-extensions'
+,p_lov_query=>'.'||wwv_flow_imp.id(152392614641425297)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>'SH256:d_tMJpBeBp67UBHBBZhjd48F4_iwZy9ygIcXOXKuAFM'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152392917070425300)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'gif'
+,p_lov_return_value=>'gif'
+,p_static_id=>'gif'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152393102499425300)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'jpg'
+,p_lov_return_value=>'jpg'
+,p_static_id=>'jpg'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152393306933425300)
+,p_lov_disp_sequence=>3
+,p_lov_disp_value=>'png'
+,p_lov_return_value=>'png'
+,p_static_id=>'png'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152393526593425301)
+,p_lov_disp_sequence=>4
+,p_lov_disp_value=>'js'
+,p_lov_return_value=>'js'
+,p_static_id=>'js'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152393720879425301)
+,p_lov_disp_sequence=>5
+,p_lov_disp_value=>'ico'
+,p_lov_return_value=>'ico'
+,p_static_id=>'ico'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152393912392425301)
+,p_lov_disp_sequence=>6
+,p_lov_disp_value=>'swf'
+,p_lov_return_value=>'swf'
+,p_static_id=>'swf'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(152561112881547769)
+,p_lov_disp_sequence=>7
+,p_lov_disp_value=>'css'
+,p_lov_return_value=>'css'
+,p_static_id=>'css'
+);
+wwv_flow_imp.component_end;
+end;
+/
