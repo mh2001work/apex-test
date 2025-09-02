@@ -1,0 +1,150 @@
+prompt --application/shared_components/user_interface/lovs/font_categories
+begin
+--   Manifest
+--     FONT_CATEGORIES
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>4000
+,p_default_id_offset=>0
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(1362022415318990531)
+,p_lov_name=>'FONT_CATEGORIES'
+,p_static_id=>'font-categories'
+,p_lov_query=>'.'||wwv_flow_imp.id(1362022415318990531)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>'SH256:Jdcm3CYSYiOOBiaOEP-XmvtE-ZDFNOkRSZS9M1jsfw8'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(497170667382843497)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Gender'
+,p_lov_return_value=>'GENDER'
+,p_static_id=>'gender'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(497171279425847351)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Hand'
+,p_lov_return_value=>'HAND'
+,p_static_id=>'hand'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(497171505282849539)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Transportation'
+,p_lov_return_value=>'TRANSPORTATION'
+,p_static_id=>'transportation'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362022731262990536)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Web Application'
+,p_lov_return_value=>'WEB_APPLICATION'
+,p_static_id=>'web-application'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362023055345990537)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'File Type'
+,p_lov_return_value=>'FILE_TYPE'
+,p_static_id=>'file-type'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362023361612990537)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Spinner'
+,p_lov_return_value=>'SPINNER'
+,p_static_id=>'spinner'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362023649634990537)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Form Control'
+,p_lov_return_value=>'FORM_CONTROL'
+,p_static_id=>'form-control'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362023956430990537)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Payment'
+,p_lov_return_value=>'PAYMENT'
+,p_static_id=>'payment'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362024258223990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Chart'
+,p_lov_return_value=>'CHART'
+,p_static_id=>'chart'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362024591404990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Currency'
+,p_lov_return_value=>'CURRENCY'
+,p_static_id=>'currency'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362024827423990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Text Editor'
+,p_lov_return_value=>'TEXT_EDITOR'
+,p_static_id=>'text-editor'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362025156564990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Directional'
+,p_lov_return_value=>'DIRECTIONAL'
+,p_static_id=>'directional'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362025474226990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Video Player'
+,p_lov_return_value=>'VIDEO_PLAYER'
+,p_static_id=>'video-player'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362025761844990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Brand'
+,p_lov_return_value=>'BRAND'
+,p_static_id=>'brand'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1362026047790990538)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Medical'
+,p_lov_return_value=>'MEDICAL'
+,p_static_id=>'medical'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1498481689694180020)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Calendar'
+,p_lov_return_value=>'CALENDAR'
+,p_static_id=>'calendar'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1498482021426180027)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Emoji'
+,p_lov_return_value=>'EMOJI'
+,p_static_id=>'emoji'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(1498482476450180027)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Numbers'
+,p_lov_return_value=>'NUMBERS'
+,p_static_id=>'numbers'
+);
+wwv_flow_imp.component_end;
+end;
+/
