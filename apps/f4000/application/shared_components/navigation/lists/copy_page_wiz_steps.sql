@@ -1,0 +1,118 @@
+prompt --application/shared_components/navigation/lists/copy_page_wiz_steps
+begin
+--   Manifest
+--     LIST: copy_page_wiz_steps
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>4000
+,p_default_id_offset=>0
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(202931703979545993)
+,p_name=>'copy_page_wiz_steps'
+,p_static_id=>'copy-page-wiz-steps'
+,p_version_scn=>'SH256:wYC7g4bosuESqzrDyyVapKjKJpJPXKu7d2rdCtj5ffA'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202933009304556968)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Copy Page Option'
+,p_static_id=>'Copy-Page-Option'
+,p_list_item_link_target=>'f?p=&APP_ID.:618:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'618'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202934128351562472)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Page to Copy'
+,p_static_id=>'Page-to-Copy'
+,p_list_item_link_target=>'f?p=&APP_ID.:621:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'621'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1556125534907719472)
+,p_list_item_display_sequence=>35
+,p_list_item_link_text=>'Navigation Menu'
+,p_static_id=>'Navigation-Menu'
+,p_list_item_link_target=>'f?p=&APP_ID.:617:&SESSION.::&DEBUG.::::'
+,p_list_item_disp_cond_type=>'VAL_OF_ITEM_IN_COND_EQ_COND2'
+,p_list_item_disp_condition=>'P621_NAVIGATION_TYPE'
+,p_list_item_disp_condition2=>'L'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'671'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(204089926319940378)
+,p_list_item_display_sequence=>35
+,p_list_item_link_text=>'Tabs'
+,p_static_id=>'Tabs'
+,p_list_item_link_target=>'f?p=&APP_ID.:617:&SESSION.::&DEBUG.::::'
+,p_list_item_disp_cond_type=>'VAL_OF_ITEM_IN_COND_NOT_EQ_COND2'
+,p_list_item_disp_condition=>'P621_NAVIGATION_TYPE'
+,p_list_item_disp_condition2=>'L'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'671'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202934605626565380)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Templates'
+,p_static_id=>'Templates'
+,p_list_item_link_target=>'f?p=&APP_ID.:622:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'622'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202935113937567735)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'Lists of Values'
+,p_static_id=>'Lists-of-Values'
+,p_list_item_link_target=>'f?p=&APP_ID.:623:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'623'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202935522249570117)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'Lists'
+,p_static_id=>'Lists'
+,p_list_item_link_target=>'f?p=&APP_ID.:625:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'625'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202935827097571532)
+,p_list_item_display_sequence=>70
+,p_list_item_link_text=>'Authorization Schemes'
+,p_static_id=>'Authorization-Schemes'
+,p_list_item_link_target=>'f?p=&APP_ID.:627:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'627'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(208023117796803899)
+,p_list_item_display_sequence=>75
+,p_list_item_link_text=>'Branches'
+,p_static_id=>'Branches'
+,p_list_item_link_target=>'f?p=&APP_ID.:593:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'593'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(202936132291573046)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'Confirm'
+,p_static_id=>'Confirm'
+,p_list_item_link_target=>'f?p=&APP_ID.:628:&SESSION.::&DEBUG.::::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'628'
+);
+wwv_flow_imp.component_end;
+end;
+/
