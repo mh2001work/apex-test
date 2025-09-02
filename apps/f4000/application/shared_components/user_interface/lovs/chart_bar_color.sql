@@ -1,0 +1,80 @@
+prompt --application/shared_components/user_interface/lovs/chart_bar_color
+begin
+--   Manifest
+--     CHART_BAR_COLOR
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>4000
+,p_default_id_offset=>0
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(84324431881606062)
+,p_lov_name=>'CHART_BAR_COLOR'
+,p_static_id=>'chart-bar-color'
+,p_lov_query=>'.'||wwv_flow_imp.id(84324431881606062)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>'SH256:o1UzK4T3b09ZjY9RN7URR5WFAN_S3TD-LAMq7YsWMEc'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84324600310606063)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Black'
+,p_lov_return_value=>'BLACK'
+,p_static_id=>'black'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84324819442606063)
+,p_lov_disp_sequence=>20
+,p_lov_disp_value=>'Blue'
+,p_lov_return_value=>'BLUE'
+,p_static_id=>'blue'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84325003884606064)
+,p_lov_disp_sequence=>30
+,p_lov_disp_value=>'Brown'
+,p_lov_return_value=>'BROWN'
+,p_static_id=>'brown'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84325217038606064)
+,p_lov_disp_sequence=>40
+,p_lov_disp_value=>'Green'
+,p_lov_return_value=>'GREEN'
+,p_static_id=>'green'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84325407670606064)
+,p_lov_disp_sequence=>50
+,p_lov_disp_value=>'Orange'
+,p_lov_return_value=>'ORANGE'
+,p_static_id=>'orange'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84325609277606064)
+,p_lov_disp_sequence=>60
+,p_lov_disp_value=>'Purple'
+,p_lov_return_value=>'PURPLE'
+,p_static_id=>'purple'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84325828072606065)
+,p_lov_disp_sequence=>70
+,p_lov_disp_value=>'Red'
+,p_lov_return_value=>'RED'
+,p_static_id=>'red'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(84326022893606065)
+,p_lov_disp_sequence=>80
+,p_lov_disp_value=>'Yellow'
+,p_lov_return_value=>'YELLOW'
+,p_static_id=>'yellow'
+);
+wwv_flow_imp.component_end;
+end;
+/
