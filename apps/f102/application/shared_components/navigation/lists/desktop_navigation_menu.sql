@@ -1,0 +1,251 @@
+prompt --application/shared_components/navigation/lists/desktop_navigation_menu
+begin
+--   Manifest
+--     LIST: Desktop Navigation Menu
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>102
+,p_default_id_offset=>1553963278047447
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(11337234794797619687)
+,p_name=>'Desktop Navigation Menu'
+,p_static_id=>'APEX$11337234794797619687'
+,p_version_scn=>'1089080073'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(11337384652126619920)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Home'
+,p_static_id=>'APEX$11337384652126619920'
+,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-home'
+,p_list_item_icon_attributes=>'title="#LIST_LABEL#"'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745157293422295916)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'Basics'
+,p_static_id=>'APEX$10745157293422295916'
+,p_list_item_link_target=>'f?p=&APP_ID.:20:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-address-card-o'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'3,12,13,18,20'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6141383674664296543)
+,p_list_item_display_sequence=>100
+,p_list_item_link_text=>'Color Coded Cards'
+,p_static_id=>'APEX$6141383674664296543'
+,p_list_item_link_target=>'f?p=&APP_ID.:18:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-paint-brush'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745157293422295916)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'18'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(9820214234616579338)
+,p_list_item_display_sequence=>110
+,p_list_item_link_text=>'Faceted Search'
+,p_static_id=>'APEX$9820214234616579338'
+,p_list_item_link_target=>'f?p=&APP_ID.:12:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-filter'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745157293422295916)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'12'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6141375962398189146)
+,p_list_item_display_sequence=>120
+,p_list_item_link_text=>'Star Icons'
+,p_static_id=>'APEX$6141375962398189146'
+,p_list_item_link_target=>'f?p=&APP_ID.:13:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-star-o'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745157293422295916)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6141379025128204624)
+,p_list_item_display_sequence=>130
+,p_list_item_link_text=>'Styles'
+,p_static_id=>'APEX$6141379025128204624'
+,p_list_item_link_target=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-cards'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745157293422295916)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Images and Media'
+,p_static_id=>'APEX$10745684847413360083'
+,p_list_item_link_target=>'f?p=&APP_ID.:21:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-image'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6059907309106562820)
+,p_list_item_display_sequence=>140
+,p_list_item_link_text=>'Application Static Files'
+,p_static_id=>'APEX$6059907309106562820'
+,p_list_item_link_target=>'f?p=&APP_ID.:8:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-file-image-o'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'8'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(11343200705816349535)
+,p_list_item_display_sequence=>150
+,p_list_item_link_text=>'Background Image'
+,p_static_id=>'APEX$11343200705816349535'
+,p_list_item_link_target=>'f?p=&APP_ID.:7:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-film'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'7'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(11337386160762619924)
+,p_list_item_display_sequence=>160
+,p_list_item_link_text=>'BLOB Column'
+,p_static_id=>'APEX$11337386160762619924'
+,p_list_item_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-image'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6063761255850795590)
+,p_list_item_display_sequence=>170
+,p_list_item_link_text=>'BLOB Column as URL'
+,p_static_id=>'APEX$6063761255850795590'
+,p_list_item_link_target=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-file-image-o'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'5'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745723566444520728)
+,p_list_item_display_sequence=>180
+,p_list_item_link_text=>'Embedded Video'
+,p_static_id=>'APEX$10745723566444520728'
+,p_list_item_link_target=>'f?p=&APP_ID.:6:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-video-camera'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'6,10'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(11340590120849527928)
+,p_list_item_display_sequence=>190
+,p_list_item_link_text=>'Image URL'
+,p_static_id=>'APEX$11340590120849527928'
+,p_list_item_link_target=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-camera'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'4'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6164891441707316761)
+,p_list_item_display_sequence=>220
+,p_list_item_link_text=>'Video Images with Durations'
+,p_static_id=>'APEX$6164891441707316761'
+,p_list_item_link_target=>'f?p=&APP_ID.:10:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-play'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745684847413360083)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745787864268708404)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Card Actions'
+,p_static_id=>'APEX$10745787864268708404'
+,p_list_item_link_target=>'f?p=&APP_ID.:22:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-link'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'13,15,16,22'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745792081108746621)
+,p_list_item_display_sequence=>200
+,p_list_item_link_text=>'Conditional Actions'
+,p_static_id=>'APEX$10745792081108746621'
+,p_list_item_link_target=>'f?p=&APP_ID.:16:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-workflow'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745787864268708404)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'16'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745791451401740540)
+,p_list_item_display_sequence=>210
+,p_list_item_link_text=>'Full Card Action'
+,p_static_id=>'APEX$10745791451401740540'
+,p_list_item_link_target=>'f?p=&APP_ID.:15:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-clipboard-check'
+,p_parent_list_item_id=>wwv_flow_imp.id(10745787864268708404)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745757333755644421)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'REST Data Sources'
+,p_static_id=>'APEX$10745757333755644421'
+,p_list_item_link_target=>'f?p=&APP_ID.:6:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-download'
+,p_list_item_disp_cond_type=>'NEVER'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6164408816884108416)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'Advanced'
+,p_static_id=>'APEX$6164408816884108416'
+,p_list_item_link_target=>'f?p=&APP_ID.:19:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-ellipsis-h'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'19'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(9821690370396751701)
+,p_list_item_display_sequence=>70
+,p_list_item_link_text=>'Charts'
+,p_static_id=>'APEX$9821690370396751701'
+,p_list_item_link_target=>'f?p=&APP_ID.:11:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-dial-gauge-chart'
+,p_parent_list_item_id=>wwv_flow_imp.id(6164408816884108416)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'11'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(10745796437782767428)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'No Data Found'
+,p_static_id=>'APEX$10745796437782767428'
+,p_list_item_link_target=>'f?p=&APP_ID.:17:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-emoji-worry'
+,p_parent_list_item_id=>wwv_flow_imp.id(6164408816884108416)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'17'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(6062211976434186581)
+,p_list_item_display_sequence=>90
+,p_list_item_link_text=>'Template Directives'
+,p_static_id=>'APEX$6062211976434186581'
+,p_list_item_link_target=>'f?p=&APP_ID.:9:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-file-brackets'
+,p_parent_list_item_id=>wwv_flow_imp.id(6164408816884108416)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp.component_end;
+end;
+/

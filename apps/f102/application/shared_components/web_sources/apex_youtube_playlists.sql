@@ -1,0 +1,70 @@
+prompt --application/shared_components/web_sources/apex_youtube_playlists
+begin
+--   Manifest
+--     WEB SOURCE: APEX YouTube Playlists
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>102
+,p_default_id_offset=>1553963278047447
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_web_source_module(
+ p_id=>wwv_flow_imp.id(10745710052204511407)
+,p_name=>'APEX YouTube Playlists'
+,p_static_id=>'APEX_Youtube_Playlists'
+,p_web_source_type=>'NATIVE_HTTP'
+,p_data_profile_id=>wwv_flow_imp.id(10745701736119511386)
+,p_remote_server_id=>1356097543692398679
+,p_url_path_prefix=>'/playlists'
+,p_credential_id=>4426755963105827594
+,p_pass_ecid=>true
+,p_version_scn=>'185292499'
+);
+wwv_flow_imp_shared.create_web_source_param(
+ p_id=>wwv_flow_imp.id(10745710649826511420)
+,p_web_src_module_id=>wwv_flow_imp.id(10745710052204511407)
+,p_name=>'channelId'
+,p_static_id=>'APEX$10745710649826511420'
+,p_param_type=>'QUERY_STRING'
+,p_data_type=>'VARCHAR2'
+,p_is_required=>false
+,p_value=>'UCEpIXFjcQIztReQNLymvYrQ'
+);
+wwv_flow_imp_shared.create_web_source_param(
+ p_id=>wwv_flow_imp.id(10745711401134511424)
+,p_web_src_module_id=>wwv_flow_imp.id(10745710052204511407)
+,p_name=>'maxResults'
+,p_static_id=>'APEX$10745711401134511424'
+,p_param_type=>'QUERY_STRING'
+,p_data_type=>'VARCHAR2'
+,p_is_required=>false
+,p_value=>'25'
+);
+wwv_flow_imp_shared.create_web_source_param(
+ p_id=>wwv_flow_imp.id(10745711817330511424)
+,p_web_src_module_id=>wwv_flow_imp.id(10745710052204511407)
+,p_name=>'part'
+,p_static_id=>'APEX$10745711817330511424'
+,p_param_type=>'QUERY_STRING'
+,p_data_type=>'VARCHAR2'
+,p_is_required=>false
+,p_value=>'snippet,contentDetails,player'
+);
+wwv_flow_imp_shared.create_web_source_operation(
+ p_id=>wwv_flow_imp.id(10745710280178511415)
+,p_web_src_module_id=>wwv_flow_imp.id(10745710052204511407)
+,p_static_id=>'APEX$10745710280178511415'
+,p_operation=>'GET'
+,p_database_operation=>'FETCH_COLLECTION'
+,p_url_pattern=>'.'
+,p_force_error_for_http_404=>false
+,p_allow_fetch_all_rows=>false
+,p_caching=>'ALL_USERS'
+,p_invalidate_when=>'10080'
+);
+wwv_flow_imp.component_end;
+end;
+/

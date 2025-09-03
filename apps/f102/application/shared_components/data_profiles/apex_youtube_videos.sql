@@ -1,0 +1,131 @@
+prompt --application/shared_components/data_profiles/apex_youtube_videos
+begin
+--   Manifest
+--     DATA PROFILE: APEX Youtube Videos
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2099.99.99'
+,p_release=>'25.1.0'
+,p_default_workspace_id=>10
+,p_default_application_id=>102
+,p_default_id_offset=>1553963278047447
+,p_default_owner=>'APEX_250100'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'APEX Youtube Videos'
+,p_format=>'JSON'
+,p_row_selector=>'items'
+,p_use_raw_json_selectors=>false
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063604025555846573)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'ID'
+,p_static_id=>'ID'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'id'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063604348937846576)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'ETAG'
+,p_static_id=>'ETAG'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'etag'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063604619777846577)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'KIND'
+,p_static_id=>'KIND'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'kind'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063604916654846579)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'CAPTION'
+,p_static_id=>'CAPTION'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.caption'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063605271880846579)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'DURATION'
+,p_static_id=>'DURATION'
+,p_sequence=>5
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.duration'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063605569867846583)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'DIMENSION'
+,p_static_id=>'DIMENSION'
+,p_sequence=>6
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.dimension'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063605876419846584)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'DEFINITION'
+,p_static_id=>'DEFINITION'
+,p_sequence=>7
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.definition'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063606127603846584)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'PROJECTION'
+,p_static_id=>'PROJECTION'
+,p_sequence=>8
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.projection'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6063606404894846584)
+,p_data_profile_id=>wwv_flow_imp.id(6063603791407846561)
+,p_name=>'LICENSEDCONTENT'
+,p_static_id=>'LICENSEDCONTENT'
+,p_sequence=>9
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'contentDetails.licensedContent'
+);
+wwv_flow_imp.component_end;
+end;
+/
