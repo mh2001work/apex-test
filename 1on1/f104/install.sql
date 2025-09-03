@@ -67,4 +67,7 @@ prompt --install
 @@application/pages/page_09999.sql
 @@application/pages/page_20000.sql
 @@application/pages/page_20010.sql
+@@application/deployment/definition.sql
+@@application/deployment/checks.sql
+@@application/deployment/buildoptions.sql
 @@application/end_environment.sql
